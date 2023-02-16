@@ -18,15 +18,19 @@ body {
   flex-direction: column;
 }
 
-h1, p {
+h1, h2, p {
   margin: 0;
 }
 
+.w-container {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
 .card-header {
-  margin-left: 10%;
-  margin-right: 10%;
   margin-top: 85px;
   text-align: center;
+  min-width: 300px;
 }
 
 .card-title {
@@ -52,6 +56,71 @@ h1, p {
   opacity: 0.5;
   letter-spacing: 0.1px;
   margin-top: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 76px;
+  margin-bottom: 78px;
+  width: 83%;
+  min-width: 300px;
+
+}
+
+.container .card:not(:first-of-type) {
+  margin-top: 25px;
+}
+
+.card {
+  width: 100%;
+  max-width: 350px;
+  padding: clamp(1.6875rem, 1.5775rem + 0.4695vw, 2rem);
+  border-radius: 8px;
+  box-shadow: 0px 15px 30px -11px hsla(213, 47%, 67%, 0.5);
+}
+
+.card1 {
+  border-top: 3px solid var(--primary-cyan);
+}
+
+.card2 {
+  border-top: 3px solid var(--primary-red);
+}
+
+.card3 {
+  border-top: 3px solid var(--primary-orange);
+}
+
+.card4 {
+  border-top: 3px solid var(--primary-blue);
+}
+
+.card-detail-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--neutral-very-dark-blue);
+}
+
+.card-detail-paragraph {
+  opacity: 0.5;
+  font-weight: 400;
+  font-size: 0.81rem;
+  line-height: 1.77;
+  letter-spacing: 0.09px;
+}
+
+.img-container {
+  text-align: right;
+  margin-top: 33px;
+}
+
+.img-container img {
+  width: 22.2%;
+  max-width: 64px;
 }
 
 
