@@ -29,8 +29,7 @@ body {
 
 .header-group {
   text-align: center;
-  width: calc((311 / 375) * 100%);
-  max-width: 540px;
+  width: 100%;
 }
 
 .main-heading {
@@ -131,6 +130,7 @@ body {
     margin-bottom: 80px;
   }
   .header-group {
+    max-width: 540px;
     margin-right: auto;
     margin-left: auto;
   }
